@@ -65,6 +65,13 @@ var testfunc = function(){
 
 //end variable declaration
 
+  client.sendRequest("GET", song, "", "", {}, false,
+  function(data, type) {
+    console.log(data);
+  },
+  function(error) {
+    console.log(error);
+  });
 
   //Additional own javascript
  return param;
